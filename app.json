@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Tennis Academy",
+    "slug": "tennis-academy-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ro.tennisacademy.mobile"
+    },
+    "android": {
+      "package": "ro.tennisacademy.mobile"
+    },
+    "plugins": ["expo-secure-store"],
+    "extra": {
+      "defaultApiBaseUrl": "http://localhost:8080"
+    }
+  }
+}
+
