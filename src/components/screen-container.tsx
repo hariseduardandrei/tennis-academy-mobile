@@ -1,34 +1,26 @@
 import type { PropsWithChildren } from 'react';
 import React from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView } from 'react-native';
 
-import { useTheme } from 'react-native-paper';
+import { useColors } from '@/theme';
 
 export function ScreenContainer({ children }: PropsWithChildren) {
-  const theme = useTheme();
+  const colors = useColors();
 
   return (
     <ScrollView
-      contentContainerStyle={[
-        styles.content,
-        {
-          backgroundColor: theme.colors.background,
-        },
-      ]}
+      contentContainerStyle={{
+        flexGrow: 1,
+        paddingHorizontal: 16,
+        paddingTop: 12,
+        paddingBottom: 32,
+        gap: 14,
+        backgroundColor: colors.bg,
+      }}
       contentInsetAdjustmentBehavior="automatic"
+      showsVerticalScrollIndicator={false}
     >
-      <View style={styles.inner}>{children}</View>
+      {children}
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  content: {
-    flexGrow: 1,
-    padding: 16,
-  },
-  inner: {
-    gap: 12,
-  },
-});
-
