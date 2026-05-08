@@ -5,7 +5,9 @@
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "ro.tennisacademy.mobile"
@@ -13,10 +15,12 @@
     "android": {
       "package": "ro.tennisacademy.mobile"
     },
-    "plugins": ["expo-secure-store"],
+    "plugins": [
+      "expo-secure-store",
+      "expo-font"
+    ],
     "extra": {
       "defaultApiBaseUrl": "http://localhost:8080"
     }
   }
 }
-

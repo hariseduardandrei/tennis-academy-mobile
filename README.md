@@ -47,7 +47,7 @@ Mobile app for `STUDENT`, `COACH/TRAINER`, and `ADMIN`, aligned with the backlog
 
 ## Stack
 
-- Expo SDK 53
+- Expo SDK 54
 - React Native + TypeScript
 - React Navigation (native stack + bottom tabs)
 - React Native Paper (MD3)
